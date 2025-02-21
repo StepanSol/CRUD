@@ -58,7 +58,7 @@ public class DBManager {
 
     private void displayResultSet(ResultSet resultSet) throws SQLException {
         if (!resultSet.isBeforeFirst() ) {
-            System.out.println("No data");
+            System.out.println("Нет данных");
         }
         while (resultSet.next()){
             System.out.println("ID: " +resultSet.getInt(1) + ", "
