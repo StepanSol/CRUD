@@ -38,6 +38,8 @@ public class Main {
                 } else if (numberOfAction == 4) {
                     manager.removeProductByID();
                 } else if (numberOfAction == 0) {
+                    connection.close();
+                    reader.close();
                     break;
                 }else {
                     System.out.println("Ведите число от 0 до 4");
